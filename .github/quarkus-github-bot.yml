@@ -1,5 +1,5 @@
 features: [ APPROVE_WORKFLOWS ]
-  workflows:
+workflows:
     rules:
       - directories:
           - .github
