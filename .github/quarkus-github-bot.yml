@@ -1,3 +1,6 @@
-features: 
-  - ALL
-
+features: [ APPROVE_WORKFLOWS ]
+  workflows:
+    rules:
+      - directories:
+          - .github
+          - src
