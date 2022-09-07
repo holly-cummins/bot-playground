@@ -1,3 +1,14 @@
-features: 
-  - ALL
-
+features: [ APPROVE_WORKFLOWS ]
+workflows:
+      rules:
+        - allow:
+            files:
+             - ./src
+             - ./doc*
+             - "**/README.md"
+            users:
+              minContributions: 1
+          unless:
+            files:
+             - ./.github
+             - "**/pom.xml"
