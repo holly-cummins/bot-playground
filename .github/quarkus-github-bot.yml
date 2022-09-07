@@ -8,7 +8,7 @@ workflows:
              - "**/README.md"
             users:
               minContributions: 5
-        unless:
+          unless:
            files:
              - ./.github
              - "**/pom.xml"
