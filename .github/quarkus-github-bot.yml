@@ -7,7 +7,7 @@ workflows:
              - ./doc*
              - "**/README.md"
             users:
-              minContributions: 5
+              minContributions: 1
           unless:
             files:
              - ./.github
