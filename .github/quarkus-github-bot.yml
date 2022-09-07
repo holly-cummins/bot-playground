@@ -1,6 +1,14 @@
 features: [ APPROVE_WORKFLOWS ]
 workflows:
-    rules:
-      - directories:
-          - .github
-          - src
+      rules:
+        - allow:
+            files:
+             - ./src
+             - ./doc*
+             - "**/README.md"
+            users:
+              minContributions: 5
+        unless:
+           files:
+             - ./.github
+             - "**/pom.xml"
