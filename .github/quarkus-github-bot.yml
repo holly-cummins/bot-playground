@@ -9,6 +9,6 @@ workflows:
             users:
               minContributions: 5
           unless:
-           files:
+            files:
              - ./.github
              - "**/pom.xml"
